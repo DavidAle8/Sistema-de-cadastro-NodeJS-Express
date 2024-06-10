@@ -1,0 +1,18 @@
+<h1> Usuários Cadastrados</h1>
+
+{{#each user}}
+  
+  <p>Nome: {{nome}}</p>
+  <p>CPF: {{cpf}}</p>
+  <p>Email: {{email}}</p>
+  <p>Telefone: {{telefone}}</p>
+  <hr>
+  <a title="Deletar Usuário" href="/deletar/{{id}}"> <button class="deletar"> Deletar </button> </a>
+
+{{/each}}
+
+<br>
+<br>
+<br>
+
+<a href="/menu" title="Acessar a página inicial"> <button class="BotaoMenuList"  type="submit"> Voltar para o menu</button> </a>
